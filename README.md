@@ -4,7 +4,7 @@ The goal of this project is to cross reference a list of species against two gov
 
 We reference the 2022 State of California Natural Resources Agency Special Animals List referred to as the CNDDB. https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=109406&inline
 
-We also reference 
+We also reference another list which we don't yet have access to.
 
 ## Step 1
 Pulling data from CNDDB which means dealing with PDFs which generally suck. We used [tabula](https://tabula.technology/) to convert the tables in CNDDB_Special_Animals_List.pdf into a csv file. This file was then processed using conver_cnddb_data.py to remove newline characters, remove header rows, and convert to json.

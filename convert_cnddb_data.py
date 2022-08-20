@@ -4,7 +4,7 @@ import json
 species_list = [];
 counter = 0;
 
-with open('cnddb_data.csv') as csvfile:
+with open('data/cnddb_data.csv') as csvfile:
     reader = reader = csv.reader(csvfile, delimiter=',', quotechar='"')
     for row in reader:
         species = {
@@ -25,5 +25,5 @@ with open('cnddb_data.csv') as csvfile:
             species_list.append(species)
 
 
-with open("cnddb_data.json", "w") as outfile:
+with open("data/cnddb_data.json", "w") as outfile:
     json.dump(species_list, outfile)
