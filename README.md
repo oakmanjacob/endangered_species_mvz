@@ -7,7 +7,7 @@ We reference the 2022 State of California Natural Resources Agency Special Anima
 We also reference another list which we don't yet have access to.
 
 ## Step 1
-Pulling data from CNDDB which means dealing with PDFs which generally suck. We used [tabula](https://tabula.technology/) to convert the tables in CNDDB_Special_Animals_List.pdf into a csv file. This file was then processed using conver_cnddb_data.py to remove newline characters, remove header rows, and convert to json.
+Pulling data from CNDDB which means dealing with PDFs which generally suck. We used [tabula](https://tabula.technology/) to convert the tables in CNDDB_Special_Animals_List.pdf into a csv file. This file was then processed using convert_cnddb_data.py to remove newline characters, remove header rows, and convert to json.
 
 We verified that this likely pulled all the data because the file lists 924 taxa and our resulting json contains 924 records.
 
